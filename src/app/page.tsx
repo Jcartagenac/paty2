@@ -660,7 +660,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Email</h3>
-                    <p className="text-gray-600">ps.patriciacartagenachel@gmail.com</p>
+                    <p className="text-gray-600">contacto@psicologialaserena.cl</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
@@ -817,7 +817,7 @@ export default function Home() {
                 <p>Ps. Patricia Cartagena Chel</p>
                 <p>Licencia N° 873113</p>
                 <p>+56 9 4635 9143</p>
-                <p>ps.patriciacartagenachel@gmail.com</p>
+                <p>contacto@psicologialaserena.cl</p>
                 <p>Amunátegui 785, oficina 204, La Serena</p>
               </div>
             </div>

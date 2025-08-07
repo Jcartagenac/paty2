@@ -100,7 +100,7 @@ export const metadata: Metadata = {
     "business.contact_data:region": "Región de Coquimbo", 
     "business.contact_data:country_name": "Chile",
     "business.contact_data:phone_number": "+56946359143",
-    "business.contact_data:email": "ps.patriciacartagenachel@gmail.com"
+    "business.contact_data:email": "contacto@psicologialaserena.cl"
   }
 };
 
@@ -140,7 +140,7 @@ export default function RootLayout({
               "description": "Servicios de psicología clínica, evaluación neuropsicológica y terapia individual en La Serena, Chile",
               "url": "https://psicologialaserena.cl",
               "telephone": "+56946359143",
-              "email": "ps.patriciacartagenachel@gmail.com",
+              "email": "contacto@psicologialaserena.cl",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "La Serena",
