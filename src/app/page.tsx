@@ -1,8 +1,42 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Mail, MapPin, Calendar, MessageCircle, Star, CheckCircle, Heart, Brain, Users, Award, Target, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Calendar, MessageCircle, Star, CheckCircle, Heart, Brain, Users, Award, Target, Clock, Share2, Facebook, Twitter, Linkedin } from "lucide-react";
 
 export default function Home() {
+  // Función para compartir en redes sociales
+  const shareUrl = "https://psicologialaserena.cl";
+  const shareTitle = "Psicólogos en La Serena Chile - Patricia Cartagena Chel";
+  const shareDescription = "Psicóloga clínica especializada en evaluaciones neuropsicológicas, test ADOS-2, WISC V, WAIS IV en La Serena, Chile.";
+
+  const socialShares = [
+    {
+      name: "Facebook",
+      icon: Facebook,
+      url: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}&quote=${encodeURIComponent(shareTitle + " - " + shareDescription)}`,
+      color: "bg-blue-600 hover:bg-blue-700"
+    },
+    {
+      name: "Twitter",
+      icon: Twitter,
+      url: `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(shareTitle + " - " + shareDescription)}&hashtags=PsicologiaLaSerena,PatriciaCartagena,SaludMental`,
+      color: "bg-sky-500 hover:bg-sky-600"
+    },
+    {
+      name: "LinkedIn",
+      icon: Linkedin,
+      url: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(shareTitle)}&summary=${encodeURIComponent(shareDescription)}`,
+      color: "bg-blue-700 hover:bg-blue-800"
+    },
+    {
+      name: "WhatsApp",
+      icon: MessageCircle,
+      url: `https://wa.me/?text=${encodeURIComponent(shareTitle + " - " + shareDescription + " " + shareUrl)}`,
+      color: "bg-green-500 hover:bg-green-600"
+    }
+  ];
+
   const services = [
     {
       title: 'Evaluación Neuropsicológica',
@@ -195,13 +229,14 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Tu bienestar mental es nuestra{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                    prioridad
+                  <span className="block">Psicología La Serena</span>
+                  <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                    Test Psicológicos Especializados
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Soy <strong>Patricia Cartagena Chel</strong>, psicóloga clínica especializada en evaluaciones neuropsicológicas y terapia individual. Te acompaño en tu proceso de transformación personal en La Serena, Chile.
+                  <strong>Patricia Cartagena Chel</strong>, psicóloga clínica especializada en <strong>evaluación neuropsicológica</strong> y <strong>test psicológicos</strong> en La Serena, Chile. 
+                  Realizamos <strong>test ADOS-2</strong>, <strong>WISC V</strong>, <strong>WAIS IV</strong>, <strong>ADI-R</strong> y terapia para <strong>ansiedad</strong>, <strong>depresión</strong> y <strong>autismo</strong>.
                 </p>
               </div>
               
@@ -250,6 +285,96 @@ export default function Home() {
               </div>
               <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full opacity-20 blur-3xl"></div>
               <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-gradient-to-br from-green-200 to-blue-200 rounded-full opacity-20 blur-3xl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Share Section */}
+      <section className="py-8 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0">
+            <div className="flex items-center space-x-3">
+              <Share2 className="w-5 h-5 text-gray-600" />
+              <span className="text-gray-700 font-medium">Comparte nuestros servicios:</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              {socialShares.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`${social.color} text-white p-2 rounded-full transition-colors duration-200 hover:scale-105 transform`}
+                  aria-label={`Compartir en ${social.name}`}
+                  title={`Compartir en ${social.name}`}
+                >
+                  <social.icon className="w-4 h-4" />
+                </a>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO Content Section - Hidden but crawlable */}
+      <section className="py-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+              Psicología y Test Psicológicos en La Serena, Región de Coquimbo
+            </h2>
+            <div className="max-w-4xl mx-auto text-gray-700 space-y-4">
+              <p>
+                <strong>Psicología La Serena</strong> - Patricia Cartagena Chel es una psicóloga clínica especializada que ofrece servicios de 
+                <strong> psicología</strong> y <strong>test psicológicos</strong> en <strong>La Serena</strong>, Región de Coquimbo, Chile. 
+                Nuestro centro de <strong>psicología La Serena</strong> se especializa en <strong>evaluación neuropsicológica</strong>, 
+                <strong>test ADOS-2</strong>, <strong>test WISC V</strong>, <strong>test WAIS IV</strong> y <strong>test ADI-R</strong>.
+              </p>
+              <p>
+                Ofrecemos <strong>terapia psicológica</strong> para <strong>ansiedad</strong>, <strong>depresión</strong>, <strong>autismo</strong> y 
+                <strong>depresión post parto</strong> en <strong>La Serena</strong>. Como <strong>psicóloga clínica</strong> con licencia profesional N° 873113, 
+                brindo <strong>atención psicológica</strong> personalizada tanto presencial como por <strong>teleconsulta</strong>.
+              </p>
+              <p>
+                Nuestros servicios de <strong>psicología La Serena</strong> incluyen <strong>diagnóstico de autismo</strong>, 
+                <strong>evaluación de inteligencia</strong>, <strong>neuropsicología</strong> y <strong>terapia individual</strong>. 
+                Si buscas un <strong>psicólogo en La Serena</strong> o <strong>test psicológicos La Serena</strong>, 
+                agenda tu <strong>consulta psicológica</strong> con Patricia Cartagena Chel.
+              </p>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-6 text-sm text-gray-600">
+            <div className="bg-white p-4 rounded-lg">
+              <h3 className="font-semibold text-gray-900 mb-2">Test Psicológicos La Serena</h3>
+              <ul className="space-y-1">
+                <li>• Test ADOS-2 La Serena</li>
+                <li>• Test WISC V La Serena</li>
+                <li>• Test WAIS IV La Serena</li>
+                <li>• Test ADI-R La Serena</li>
+                <li>• Evaluación Neuropsicológica</li>
+              </ul>
+            </div>
+            <div className="bg-white p-4 rounded-lg">
+              <h3 className="font-semibold text-gray-900 mb-2">Terapia Psicológica La Serena</h3>
+              <ul className="space-y-1">
+                <li>• Terapia Ansiedad La Serena</li>
+                <li>• Tratamiento Depresión La Serena</li>
+                <li>• Terapia Individual La Serena</li>
+                <li>• Psicoterapia La Serena</li>
+                <li>• Salud Mental La Serena</li>
+              </ul>
+            </div>
+            <div className="bg-white p-4 rounded-lg">
+              <h3 className="font-semibold text-gray-900 mb-2">Especialidades La Serena</h3>
+              <ul className="space-y-1">
+                <li>• Diagnóstico Autismo La Serena</li>
+                <li>• Psicología Infantil La Serena</li>
+                <li>• Neuropsicología La Serena</li>
+                <li>• Depresión Post Parto La Serena</li>
+                <li>• Evaluación Psicológica La Serena</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -645,6 +770,44 @@ export default function Home() {
       >
         <MessageCircle className="w-6 h-6" />
       </a>
+
+      {/* Social Share Float Button - Mobile */}
+      <div className="fixed bottom-6 left-6 z-50 md:hidden">
+        <div className="group">
+          <button
+            className="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg transition-all duration-200"
+            onClick={() => {
+              const shareMenu = document.getElementById('mobile-share-menu');
+              shareMenu?.classList.toggle('hidden');
+            }}
+            aria-label="Compartir en redes sociales"
+          >
+            <Share2 className="w-5 h-5" />
+          </button>
+          
+          <div id="mobile-share-menu" className="hidden absolute bottom-16 left-0 bg-white rounded-lg shadow-xl p-2 space-y-2 min-w-[200px]">
+            <div className="text-sm font-medium text-gray-700 px-3 py-2 border-b">
+              Compartir en:
+            </div>
+            {socialShares.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-3 px-3 py-2 text-gray-700 hover:bg-gray-50 rounded-md transition-colors"
+                onClick={() => {
+                  const shareMenu = document.getElementById('mobile-share-menu');
+                  shareMenu?.classList.add('hidden');
+                }}
+              >
+                <social.icon className="w-4 h-4" />
+                <span className="text-sm">{social.name}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

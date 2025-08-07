@@ -5,32 +5,74 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Psicólogos en La Serena Chile | Patricia Cartagena Chel | Chrysalis Psicología",
-  description: "Psicólogos especializados en La Serena Chile. Patricia Cartagena Chel, Licencia 873113. Evaluación neuropsicológica, test ADOS-2, WISC V, WAIS IV, terapia ansiedad y depresión. Agenda tu consulta.",
+  title: "Psicología La Serena | Test Psicológicos La Serena | Patricia Cartagena Chel",
+  description: "Psicología La Serena Chile - Test psicológicos especializados: ADOS-2, WISC V, WAIS IV, evaluación neuropsicológica. Patricia Cartagena Chel, psicóloga clínica licencia 873113. Terapia ansiedad, depresión, autismo La Serena.",
   keywords: [
-    "psicólogos La Serena",
-    "psicóloga La Serena Chile", 
-    "Patricia Cartagena Chel",
-    "evaluación neuropsicológica La Serena",
-    "test ADOS-2 La Serena",
-    "test WISC V La Serena",
-    "test WAIS IV La Serena",
-    "terapia ansiedad La Serena",
-    "tratamiento depresión La Serena",
-    "psicólogo clínico La Serena",
-    "consulta psicológica La Serena",
-    "salud mental La Serena",
-    "terapia individual La Serena",
-    "psicología infantil La Serena",
-    "diagnóstico autismo La Serena",
-    "test ADI-R La Serena",
-    "depresión post parto La Serena",
-    "psicólogos región Coquimbo",
-    "Chrysalis psicología",
-    "licencia 873113"
+    // Búsquedas principales
+    "psicología la serena",
+    "psicólogo la serena",
+    "psicóloga la serena",
+    "test psicológicos la serena",
+    "test la serena",
+    "evaluación psicológica la serena",
+    
+    // Servicios específicos
+    "test ados-2 la serena",
+    "test wisc v la serena", 
+    "test wais iv la serena",
+    "test adir la serena",
+    "evaluación neuropsicológica la serena",
+    "neuropsicología la serena",
+    
+    // Tratamientos
+    "terapia ansiedad la serena",
+    "tratamiento depresión la serena",
+    "terapia individual la serena",
+    "psicoterapia la serena",
+    "salud mental la serena",
+    "bienestar emocional la serena",
+    
+    // Especialidades
+    "diagnóstico autismo la serena",
+    "tea la serena",
+    "espectro autista la serena",
+    "psicología infantil la serena",
+    "psicología adultos la serena",
+    "depresión post parto la serena",
+    
+    // Ubicación específica
+    "psicólogos región coquimbo",
+    "psicología región coquimbo",
+    "test psicológicos región coquimbo",
+    "salud mental región coquimbo",
+    
+    // Profesional
+    "patricia cartagena chel",
+    "patricia cartagena psicóloga",
+    "licencia 873113",
+    "chrysalis psicología",
+    
+    // Búsquedas relacionadas
+    "consulta psicológica la serena",
+    "atención psicológica la serena",
+    "centro psicológico la serena",
+    "clínica psicológica la serena",
+    "psicólogo clínico la serena",
+    "especialista psicología la serena",
+    
+    // Modalidades
+    "psicólogo presencial la serena",
+    "teleconsulta psicología la serena",
+    "terapia online la serena",
+    
+    // Urgencias y necesidades
+    "psicólogo urgente la serena",
+    "ayuda psicológica la serena",
+    "apoyo emocional la serena",
+    "crisis emocional la serena"
   ].join(", "),
   authors: [{ name: "Patricia Cartagena Chel", url: "https://psicologialaserena.cl" }],
-  creator: "Patricia Cartagena Chel",
+  creator: "Patricia Cartagena Chel - Psicóloga Clínica La Serena",
   publisher: "Chrysalis - Psicología La Serena",
   robots: {
     index: true,
@@ -49,21 +91,21 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://psicologialaserena.cl/",
-    title: "Psicólogos en La Serena Chile | Patricia Cartagena Chel | Chrysalis",
-    description: "Psicólogos especializados en La Serena Chile. Evaluación neuropsicológica, test ADOS-2, WISC V, WAIS IV, terapia para ansiedad y depresión. Patricia Cartagena Chel, Licencia 873113.",
+    title: "Psicología La Serena | Test Psicológicos | Patricia Cartagena Chel",
+    description: "Psicología La Serena Chile - Test psicológicos especializados: ADOS-2, WISC V, WAIS IV, evaluación neuropsicológica. Terapia ansiedad, depresión, autismo. Patricia Cartagena Chel, licencia 873113.",
     images: [
       {
         url: "https://psicologialaserena.cl/hero-main.jpg",
         width: 1200,
         height: 630,
-        alt: "Patricia Cartagena Chel - Psicóloga en La Serena Chile",
+        alt: "Psicología La Serena - Patricia Cartagena Chel - Test Psicológicos",
         type: "image/jpeg"
       },
       {
         url: "https://psicologialaserena.cl/patricia-professional.jpg", 
         width: 800,
         height: 600,
-        alt: "Patricia Cartagena Chel - Psicóloga Clínica Licencia 873113",
+        alt: "Patricia Cartagena Chel - Psicóloga Clínica La Serena - Licencia 873113",
         type: "image/jpeg"
       }
     ],
@@ -72,34 +114,39 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Psicólogos en La Serena Chile | Patricia Cartagena Chel",
-    description: "Psicólogos especializados en La Serena Chile. Evaluación neuropsicológica, test ADOS-2, WISC V, WAIS IV, terapia ansiedad y depresión.",
+    title: "Psicología La Serena | Test Psicológicos | Patricia Cartagena Chel",
+    description: "Psicología La Serena Chile - Test psicológicos especializados: ADOS-2, WISC V, WAIS IV, evaluación neuropsicológica. Terapia ansiedad, depresión.",
     images: ["https://psicologialaserena.cl/hero-main.jpg"],
-    creator: "@PatriciaCartagenaChel"
+    creator: "@PsicologiaLaSerena"
   },
   verification: {
     google: "google-site-verification-code-here",
   },
   category: "Healthcare",
-  classification: "Psychology Services",
+  classification: "Psychology Services La Serena",
   other: {
     "geo.region": "CL-CO",
-    "geo.placename": "La Serena",
+    "geo.placename": "La Serena, Región de Coquimbo",
     "geo.position": "-29.9027;-71.2519",
     "ICBM": "-29.9027, -71.2519",
-    "DC.title": "Psicólogos en La Serena Chile - Patricia Cartagena Chel",
+    "DC.title": "Psicología La Serena - Test Psicológicos - Patricia Cartagena Chel",
     "DC.creator": "Patricia Cartagena Chel",
-    "DC.subject": "Psicología, Evaluación Neuropsicológica, Test ADOS-2, WISC V, WAIS IV, Terapia",
-    "DC.description": "Servicios de psicología clínica especializados en La Serena, Chile",
-    "DC.publisher": "Chrysalis Psicología",
-    "DC.contributor": "Patricia Cartagena Chel",
+    "DC.subject": "Psicología La Serena, Test Psicológicos, Evaluación Neuropsicológica, ADOS-2, WISC V, WAIS IV, Terapia",
+    "DC.description": "Servicios de psicología clínica y test psicológicos especializados en La Serena, Región de Coquimbo, Chile",
+    "DC.publisher": "Chrysalis Psicología La Serena",
+    "DC.contributor": "Patricia Cartagena Chel - Psicóloga Clínica",
     "DC.date": "2025-01-08",
-    "DC.type": "Service",
+    "DC.type": "Psychology Service",
     "DC.format": "text/html",
     "DC.identifier": "https://psicologialaserena.cl",
     "DC.language": "es-CL",
     "DC.coverage": "La Serena, Región de Coquimbo, Chile",
-    "DC.rights": "Copyright 2025 Chrysalis Psicología"
+    "DC.rights": "Copyright 2025 Chrysalis Psicología La Serena",
+    "business.contact_data:locality": "La Serena",
+    "business.contact_data:region": "Región de Coquimbo", 
+    "business.contact_data:country_name": "Chile",
+    "business.contact_data:phone_number": "+56946359143",
+    "business.contact_data:email": "ps.patriciacartagenachel@gmail.com"
   }
 };
 
