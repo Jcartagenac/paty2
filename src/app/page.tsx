@@ -192,7 +192,7 @@ export default function Home() {
               </div>
               <div>
                 <h1 className="text-xl font-bold text-gray-900">Chrysalis</h1>
-                <p className="text-sm text-gray-600">Psicología La Serena</p>
+                <p className="text-sm text-gray-600">Chrysalis</p>
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
@@ -229,7 +229,7 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  <span className="block">Psicología La Serena</span>
+                  <span className="block">Chrysalis</span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                     Test Psicológicos Especializados
                   </span>
@@ -791,7 +791,7 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Chrysalis</h3>
-                  <p className="text-gray-400">Psicología La Serena</p>
+                  <p className="text-gray-400">Chrysalis</p>
                 </div>
               </div>
               <p className="text-gray-400">
@@ -824,7 +824,7 @@ export default function Home() {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Chrysalis - Psicología La Serena. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Chrysalis. Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
