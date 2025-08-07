@@ -131,7 +131,7 @@ export default function Home() {
                 title: "Test ADOS-2",
                 description: "Diagnóstico especializado del espectro autista",
                 icon: Users,
-                image: "/wisc-test.png"
+                image: "/ados-2-test.jpg"
               },
               {
                 title: "Test ADI-R",
