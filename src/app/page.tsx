@@ -242,7 +242,7 @@ export default function Home() {
               
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://calendar.google.com/calendar/appointments/AcZssZ2FER6aZNcJ8QnqQOjz5K8XyQrz"
+                  href="https://calendar.app.google/GKpccK9obnPtLCnH8"
                   className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors flex items-center justify-center space-x-2"
                 >
                   <Calendar className="w-5 h-5" />
@@ -683,7 +683,7 @@ export default function Home() {
                   <span>Contactar por WhatsApp</span>
                 </a>
                 <a
-                  href="https://calendar.google.com/calendar/appointments/AcZssZ2FER6aZNcJ8QnqQOjz5K8XyQrz"
+                  href="https://calendar.app.google/GKpccK9obnPtLCnH8"
                   className="w-full bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors flex items-center justify-center space-x-2"
                 >
                   <Calendar className="w-5 h-5" />
@@ -693,23 +693,40 @@ export default function Home() {
             </div>
 
             <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Horarios de Atención</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="font-medium text-gray-900">Lunes - Viernes</span>
-                  <span className="text-gray-600">09:00 - 18:00</span>
-                </div>
-                <div className="flex justify-between items-center py-2 border-b border-gray-200">
-                  <span className="font-medium text-gray-900">Sábados</span>
-                  <span className="text-gray-600">09:00 - 13:00</span>
-                </div>
-                <div className="flex justify-between items-center py-2">
-                  <span className="font-medium text-gray-900">Domingos</span>
-                  <span className="text-gray-600">Cerrado</span>
-                </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Agenda tu Cita</h3>
+              
+              {/* Google Calendar Appointment Scheduling begin */}
+              <div className="bg-white rounded-lg overflow-hidden shadow-lg">
+                <iframe 
+                  src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3wuL23eO3Yp7WB9DaWWaJLGnzOI_aDomoMS9W0j6OYGbg9QCr8teKYIneTlncp9aaf7HaPlq4X?gv=true" 
+                  style={{border: 0}} 
+                  width="100%" 
+                  height="600" 
+                  frameBorder="0"
+                  title="Calendario de Citas - Patricia Cartagena"
+                ></iframe>
               </div>
+              {/* end Google Calendar Appointment Scheduling */}
               
               <div className="mt-8 p-4 bg-white rounded-lg">
+                <h4 className="font-semibold text-gray-900 mb-2">Horarios de Atención</h4>
+                <div className="space-y-2">
+                  <div className="flex justify-between items-center py-1 border-b border-gray-200">
+                    <span className="font-medium text-gray-900">Lunes - Viernes</span>
+                    <span className="text-gray-600">09:00 - 18:00</span>
+                  </div>
+                  <div className="flex justify-between items-center py-1 border-b border-gray-200">
+                    <span className="font-medium text-gray-900">Sábados</span>
+                    <span className="text-gray-600">09:00 - 13:00</span>
+                  </div>
+                  <div className="flex justify-between items-center py-1">
+                    <span className="font-medium text-gray-900">Domingos</span>
+                    <span className="text-gray-600">Cerrado</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 p-4 bg-white rounded-lg">
                 <h4 className="font-semibold text-gray-900 mb-2">Modalidades de Atención</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li>• Consulta presencial</li>
@@ -719,7 +736,7 @@ export default function Home() {
                 </ul>
               </div>
 
-              <div className="mt-8 p-4 bg-white rounded-lg">
+              <div className="mt-6 p-4 bg-white rounded-lg">
                 <h4 className="font-semibold text-gray-900 mb-2">Formas de Pago</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li>• Fonasa</li>
@@ -745,7 +762,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="https://calendar.google.com/calendar/appointments/AcZssZ2FER6aZNcJ8QnqQOjz5K8XyQrz"
+                href="https://calendar.app.google/GKpccK9obnPtLCnH8"
                 className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full text-lg font-semibold transition-colors flex items-center justify-center space-x-2"
               >
                 <Calendar className="w-5 h-5" />
