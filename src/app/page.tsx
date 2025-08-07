@@ -236,7 +236,7 @@ export default function Home() {
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   Ps. Patricia Cartagena Chel, psicóloga clínica especializada en evaluación neuropsicológica y test psicológicos en La Serena, Chile. 
-                  Ofrecemos servicios de test ADOS-2, WISC V, WAIS IV, ADI-R y terapia especializada para ansiedad, depresión y trastornos del espectro autista.
+                  Trabajo desde el modelo cognitivo conductual y terapia DBT (Terapia Dialéctica Conductual), ofreciendo servicios de test ADOS-2, WISC V, WAIS IV, ADI-R y terapia especializada para ansiedad, depresión y trastornos del espectro autista.
                 </p>
               </div>
               
@@ -333,14 +333,15 @@ export default function Home() {
               </p>
               <p>
                 Nos especializamos en evaluaciones diagnósticas como test ADOS-2 para trastornos del espectro autista, 
-                WISC V y WAIS IV para evaluación de inteligencia, además de ofrecer terapia especializada 
-                para ansiedad, depresión y trastornos del estado de ánimo. También proporcionamos 
-                apoyo especializado para depresión post parto y terapia familiar.
+                WISC V y WAIS IV para evaluación de inteligencia. En el ámbito terapéutico, trabajamos desde el modelo 
+                cognitivo conductual y la terapia DBT (Terapia Dialéctica Conductual), ofreciendo tratamiento especializado 
+                para ansiedad, depresión, trastornos del estado de ánimo, depresión post parto y terapia familiar.
               </p>
               <p>
                 Trabajamos tanto en modalidad presencial como por teleconsulta, adaptándonos a las necesidades 
-                de cada paciente. Nuestro enfoque se centra en brindar herramientas efectivas para el bienestar 
-                emocional y el desarrollo personal de nuestros pacientes.
+                de cada paciente. Nuestro enfoque desde el modelo cognitivo conductual y la terapia DBT se centra en 
+                brindar herramientas efectivas para el manejo emocional, regulación conductual y el desarrollo personal, 
+                promoviendo cambios duraderos en el bienestar emocional de nuestros pacientes.
               </p>
             </div>
           </div>
@@ -462,9 +463,10 @@ export default function Home() {
                 </p>
                 <p className="text-gray-600 leading-relaxed">
                   Con experiencia comprobada en psicología clínica y evaluación neuropsicológica, 
-                  me especializo en brindar atención integral y personalizada. Mi enfoque se centra en 
-                  crear un ambiente seguro y acogedor donde cada persona pueda explorar y desarrollar 
-                  su potencial.
+                  me especializo en brindar atención integral y personalizada desde el modelo cognitivo conductual 
+                  y la terapia DBT (Terapia Dialéctica Conductual). Mi enfoque se centra en crear un ambiente 
+                  seguro y acogedor donde cada persona pueda desarrollar herramientas efectivas para el manejo 
+                  emocional y el crecimiento personal.
                 </p>
               </div>
               
@@ -479,7 +481,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Heart className="h-5 w-5 text-blue-500" />
-                  <span className="text-gray-700">Enfoque Humanista y Empático</span>
+                  <span className="text-gray-700">Modelo Cognitivo Conductual y Terapia DBT</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <CheckCircle className="w-6 h-6 text-green-500" />
