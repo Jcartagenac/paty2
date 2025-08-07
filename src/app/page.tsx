@@ -267,7 +267,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="w-5 h-5 text-blue-500" />
-                  <span>La Serena, Chile</span>
+                  <span>Amunátegui 785, oficina 204, La Serena</span>
                 </div>
               </div>
             </div>
@@ -329,7 +329,7 @@ export default function Home() {
                 Nuestro centro ofrece servicios integrales de psicología clínica en La Serena, 
                 especializándonos en evaluación neuropsicológica y test psicológicos para todas las edades. 
                 Con Patricia Cartagena Chel, psicóloga clínica con licencia profesional N° 873113, 
-                brindamos atención personalizada en la Región de Coquimbo.
+                brindamos atención personalizada en Amunátegui 785, oficina 204, La Serena.
               </p>
               <p>
                 Nos especializamos en evaluaciones diagnósticas como test ADOS-2 para trastornos del espectro autista, 
@@ -410,7 +410,7 @@ export default function Home() {
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span>Consulta presencial en La Serena</span>
+                  <span>Consulta presencial en Amunátegui 785, oficina 204</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <CheckCircle className="w-4 h-4 text-green-500" />
@@ -669,7 +669,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Ubicación</h3>
-                    <p className="text-gray-600">La Serena, Región de Coquimbo</p>
+                    <p className="text-gray-600">Amunátegui 785, oficina 204, La Serena</p>
                   </div>
                 </div>
               </div>
@@ -818,7 +818,7 @@ export default function Home() {
                 <p>Licencia N° 873113</p>
                 <p>+56 9 4635 9143</p>
                 <p>ps.patriciacartagenachel@gmail.com</p>
-                <p>La Serena, Chile</p>
+                <p>Amunátegui 785, oficina 204, La Serena</p>
               </div>
             </div>
           </div>
