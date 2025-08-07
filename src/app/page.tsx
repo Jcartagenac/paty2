@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin, Calendar, MessageCircle, Star, CheckCircle, Heart,
 export default function Home() {
   // Función para compartir en redes sociales
   const shareUrl = "https://psicologialaserena.cl";
-  const shareTitle = "Psicólogos en La Serena Chile - Patricia Cartagena Chel";
+  const shareTitle = "Psicólogos en La Serena Chile - Ps. Patricia Cartagena Chel";
   const shareDescription = "Psicóloga clínica especializada en evaluaciones neuropsicológicas, test ADOS-2, WISC V, WAIS IV en La Serena, Chile.";
 
   const socialShares = [
@@ -231,11 +231,11 @@ export default function Home() {
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   <span className="block">Chrysalis</span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                    Test Psicológicos Especializados
+                    Atención psicológica especializada
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Patricia Cartagena Chel, psicóloga clínica especializada en evaluación neuropsicológica y test psicológicos en La Serena, Chile. 
+                  Ps. Patricia Cartagena Chel, psicóloga clínica especializada en evaluación neuropsicológica y test psicológicos en La Serena, Chile. 
                   Ofrecemos servicios de test ADOS-2, WISC V, WAIS IV, ADI-R y terapia especializada para ansiedad, depresión y trastornos del espectro autista.
                 </p>
               </div>
@@ -276,7 +276,7 @@ export default function Home() {
               <div className="relative z-10">
                 <Image
                   src="/hero-main.jpg"
-                  alt="Patricia Cartagena Chel - Psicóloga en La Serena"
+                  alt="Ps. Patricia Cartagena Chel - Psicóloga en La Serena"
                   width={600}
                   height={600}
                   className="rounded-2xl shadow-2xl"
@@ -328,7 +328,7 @@ export default function Home() {
               <p>
                 Nuestro centro ofrece servicios integrales de psicología clínica en La Serena, 
                 especializándonos en evaluación neuropsicológica y test psicológicos para todas las edades. 
-                Con Patricia Cartagena Chel, psicóloga clínica con licencia profesional N° 873113, 
+                Con Ps. Patricia Cartagena Chel, psicóloga clínica con licencia profesional N° 873113, 
                 brindamos atención personalizada en Amunátegui 785, oficina 204, La Serena.
               </p>
               <p>
@@ -455,7 +455,7 @@ export default function Home() {
             <div className="space-y-6">
               <div className="space-y-4">
                 <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
-                  Patricia Cartagena Chel
+                  Ps. Patricia Cartagena Chel
                 </h2>
                 <p className="text-xl text-blue-600 font-semibold">
                   Psicóloga Clínica Especializada
@@ -497,7 +497,7 @@ export default function Home() {
             <div className="relative">
               <Image
                 src="/patricia-professional.jpg"
-                alt="Patricia Cartagena Chel - Psicóloga Clínica"
+                alt="Ps. Patricia Cartagena Chel - Psicóloga Clínica"
                 width={500}
                 height={600}
                 className="rounded-2xl shadow-2xl"
@@ -814,7 +814,7 @@ export default function Home() {
             <div>
               <h4 className="font-semibold mb-4">Contacto</h4>
               <div className="space-y-2 text-gray-400">
-                <p>Patricia Cartagena Chel</p>
+                <p>Ps. Patricia Cartagena Chel</p>
                 <p>Licencia N° 873113</p>
                 <p>+56 9 4635 9143</p>
                 <p>ps.patriciacartagenachel@gmail.com</p>
