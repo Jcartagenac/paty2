@@ -1,8 +1,151 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, Mail, MapPin, Calendar, MessageCircle, Star, CheckCircle, Heart, Brain, Users } from "lucide-react";
+import { Phone, Mail, MapPin, Calendar, MessageCircle, Star, CheckCircle, Heart, Brain, Users, Award, Target, Clock } from "lucide-react";
 
 export default function Home() {
+  const services = [
+    {
+      title: 'Evaluación Neuropsicológica',
+      description: 'Evaluación integral de funciones cognitivas, memoria, atención, funciones ejecutivas y habilidades neuropsicológicas.',
+      icon: Brain,
+      image: "/neuropsicologia.jpg",
+      duration: '2-3 sesiones',
+      features: [
+        'Evaluación de memoria y atención',
+        'Análisis de funciones ejecutivas',
+        'Informe detallado con recomendaciones',
+        'Seguimiento post-evaluación'
+      ]
+    },
+    {
+      title: 'Test ADOS-2',
+      description: 'Escala de Observación para el Diagnóstico del Autismo, herramienta gold standard para evaluación de TEA.',
+      icon: Users,
+      image: "/ados-2-test.jpg",
+      duration: '1-2 sesiones',
+      features: [
+        'Evaluación especializada para TEA',
+        'Protocolo internacional reconocido',
+        'Informe diagnóstico completo',
+        'Orientación familiar'
+      ]
+    },
+    {
+      title: 'Test ADI-R',
+      description: 'Entrevista para el Diagnóstico del Autismo Revisada, evaluación comprehensiva del desarrollo y comportamiento.',
+      icon: MessageCircle,
+      image: "/professional-support.webp",
+      duration: '1 sesión',
+      features: [
+        'Entrevista estructurada con padres',
+        'Evaluación del desarrollo temprano',
+        'Análisis de patrones de comportamiento',
+        'Complemento ideal para ADOS-2'
+      ]
+    },
+    {
+      title: 'WISC V',
+      description: 'Escala de Inteligencia de Wechsler para Niños, evaluación completa de capacidades cognitivas en niños y adolescentes.',
+      icon: Star,
+      image: "/wisc-test.png",
+      duration: '2 sesiones',
+      features: [
+        'Evaluación de CI y capacidades cognitivas',
+        'Análisis de fortalezas y debilidades',
+        'Recomendaciones educativas',
+        'Informe psicoeducativo detallado'
+      ]
+    },
+    {
+      title: 'WAIS IV',
+      description: 'Escala de Inteligencia de Wechsler para Adultos, evaluación comprehensiva de capacidades intelectuales en adultos.',
+      icon: Target,
+      image: "/professional-support.webp",
+      duration: '2 sesiones',
+      features: [
+        'Evaluación de inteligencia en adultos',
+        'Análisis de capacidades cognitivas',
+        'Orientación vocacional y laboral',
+        'Informe psicológico completo'
+      ]
+    },
+    {
+      title: 'Tratamientos Depresivos',
+      description: 'Terapia especializada para el manejo y superación de episodios depresivos y trastornos del estado de ánimo.',
+      icon: Heart,
+      image: "/terapia-ansiedad.png",
+      duration: 'Variable',
+      features: [
+        'Terapia cognitivo-conductual',
+        'Técnicas de activación conductual',
+        'Manejo de pensamientos negativos',
+        'Plan de prevención de recaídas'
+      ]
+    },
+    {
+      title: 'Trastornos Ansiosos',
+      description: 'Tratamiento integral para ansiedad generalizada, fobias, ataques de pánico y otros trastornos ansiosos.',
+      icon: Users,
+      image: "/terapia-ansiedad.png",
+      duration: 'Variable',
+      features: [
+        'Técnicas de relajación y respiración',
+        'Terapia de exposición gradual',
+        'Reestructuración cognitiva',
+        'Herramientas de autocontrol'
+      ]
+    },
+    {
+      title: 'Depresión Post Parto',
+      description: 'Apoyo especializado para madres que experimentan depresión durante el período perinatal y postparto.',
+      icon: Heart,
+      image: "/consultorio-ambiente.webp",
+      duration: 'Variable',
+      features: [
+        'Apoyo emocional especializado',
+        'Técnicas de vinculación madre-bebé',
+        'Manejo del estrés parental',
+        'Orientación familiar'
+      ]
+    }
+  ];
+
+  const testimonials = [
+    {
+      name: 'María González',
+      text: 'Patricia me ayudó a superar mi ansiedad con un enfoque muy profesional y empático. Recomiendo totalmente sus servicios.',
+      rating: 5
+    },
+    {
+      name: 'Carlos Mendoza',
+      text: 'La evaluación neuropsicológica fue muy completa. Patricia explicó todo el proceso de manera clara y comprensible.',
+      rating: 5
+    },
+    {
+      name: 'Ana Rodríguez',
+      text: 'Excelente atención para mi hijo. Los test WISC fueron realizados con mucha paciencia y profesionalismo.',
+      rating: 5
+    }
+  ];
+
+  const stats = [
+    { number: '500+', label: 'Pacientes Atendidos' },
+    { number: '8+', label: 'Años de Experiencia' },
+    { number: '15+', label: 'Tipos de Evaluaciones' },
+    { number: '98%', label: 'Satisfacción del Cliente' }
+  ];
+
+  const additionalServices = [
+    'Terapia Individual para Adultos',
+    'Terapia de Pareja',
+    'Terapia Familiar',
+    'Orientación Vocacional',
+    'Evaluación de Discapacidad Intelectual',
+    'Informes Psicológicos Legales',
+    'Consultoría Educacional',
+    'Talleres de Bienestar Mental'
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50">
       {/* Header */}
@@ -22,6 +165,7 @@ export default function Home() {
               <Link href="#inicio" className="text-gray-700 hover:text-blue-600 transition-colors">Inicio</Link>
               <Link href="#servicios" className="text-gray-700 hover:text-blue-600 transition-colors">Servicios</Link>
               <Link href="#sobre-mi" className="text-gray-700 hover:text-blue-600 transition-colors">Sobre Mí</Link>
+              <Link href="#testimonios" className="text-gray-700 hover:text-blue-600 transition-colors">Testimonios</Link>
               <Link href="#contacto" className="text-gray-700 hover:text-blue-600 transition-colors">Contacto</Link>
             </nav>
             <div className="flex items-center space-x-4">
@@ -45,19 +189,19 @@ export default function Home() {
       </header>
 
       {/* Hero Section */}
-      <section id="inicio" className="relative py-20 lg:py-32">
+      <section id="inicio" className="relative py-20 lg:py-32 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  Psicóloga en{" "}
+                  Tu bienestar mental es nuestra{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                    La Serena
+                    prioridad
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Soy <strong>Patricia Cartagena Chel</strong>, psicóloga clínica especializada en evaluaciones neuropsicológicas y terapia individual. Te acompaño en tu proceso de transformación personal.
+                  Soy <strong>Patricia Cartagena Chel</strong>, psicóloga clínica especializada en evaluaciones neuropsicológicas y terapia individual. Te acompaño en tu proceso de transformación personal en La Serena, Chile.
                 </p>
               </div>
               
@@ -70,11 +214,10 @@ export default function Home() {
                   <span>Agendar Cita</span>
                 </a>
                 <a
-                  href="#contacto"
+                  href="#servicios"
                   className="border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors flex items-center justify-center space-x-2"
                 >
-                  <Mail className="w-5 h-5" />
-                  <span>Contactar</span>
+                  <span>Ver Servicios</span>
                 </a>
               </div>
 
@@ -82,6 +225,10 @@ export default function Home() {
                 <div className="flex items-center space-x-2">
                   <CheckCircle className="w-5 h-5 text-green-500" />
                   <span>Licencia N° 873113</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span>Atención Personalizada</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <MapPin className="w-5 h-5 text-blue-500" />
@@ -101,7 +248,85 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl transform rotate-3"></div>
+              <div className="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full opacity-20 blur-3xl"></div>
+              <div className="absolute -bottom-4 -left-4 w-72 h-72 bg-gradient-to-br from-green-200 to-blue-200 rounded-full opacity-20 blur-3xl"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-gray-600 text-sm md:text-base">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Preview */}
+      <section id="sobre-mi" className="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <div className="space-y-4">
+                <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
+                  Patricia Cartagena Chel
+                </h2>
+                <p className="text-xl text-blue-600 font-semibold">
+                  Psicóloga Clínica Especializada
+                </p>
+                <p className="text-gray-600 leading-relaxed">
+                  Con más de 8 años de experiencia en psicología clínica y evaluación neuropsicológica, 
+                  me especializo en brindar atención integral y personalizada. Mi enfoque se centra en 
+                  crear un ambiente seguro y acogedor donde cada persona pueda explorar y desarrollar 
+                  su potencial.
+                </p>
+              </div>
+              
+              <div className="space-y-3">
+                <div className="flex items-center space-x-3">
+                  <Award className="h-5 w-5 text-blue-500" />
+                  <span className="text-gray-700">Licencia Profesional N° 873113</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Brain className="h-5 w-5 text-blue-500" />
+                  <span className="text-gray-700">Especialista en Evaluación Neuropsicológica</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Heart className="h-5 w-5 text-blue-500" />
+                  <span className="text-gray-700">Enfoque Humanista y Empático</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-6 h-6 text-green-500" />
+                  <span className="text-gray-700">Certificada en Test ADOS-2 y ADI-R</span>
+                </div>
+              </div>
+
+              <p className="text-gray-600 leading-relaxed">
+                Mi enfoque se centra en brindar un espacio seguro y profesional donde cada persona pueda 
+                explorar sus emociones, desarrollar herramientas de afrontamiento y lograr un bienestar 
+                psicológico duradero. Trabajo con niños, adolescentes y adultos en La Serena.
+              </p>
+            </div>
+
+            <div className="relative">
+              <Image
+                src="/patricia-professional.jpg"
+                alt="Patricia Cartagena Chel - Psicóloga Clínica"
+                width={500}
+                height={600}
+                className="rounded-2xl shadow-2xl"
+              />
             </div>
           </div>
         </div>
@@ -120,44 +345,7 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Evaluación Neuropsicológica",
-                description: "Evaluación completa de funciones cognitivas y neurológicas",
-                icon: Brain,
-                image: "/neuropsicologia.jpg"
-              },
-              {
-                title: "Test ADOS-2",
-                description: "Diagnóstico especializado del espectro autista",
-                icon: Users,
-                image: "/ados-2-test.jpg"
-              },
-              {
-                title: "Test ADI-R",
-                description: "Entrevista diagnóstica para autismo",
-                icon: MessageCircle,
-                image: "/professional-support.webp"
-              },
-              {
-                title: "WISC V",
-                description: "Escala de inteligencia para niños",
-                icon: Star,
-                image: "/wisc-test.png"
-              },
-              {
-                title: "WAIS IV",
-                description: "Escala de inteligencia para adultos",
-                icon: CheckCircle,
-                image: "/professional-support.webp"
-              },
-              {
-                title: "Terapia Individual",
-                description: "Tratamiento personalizado para ansiedad, depresión y más",
-                icon: Heart,
-                image: "/terapia-ansiedad.png"
-              }
-            ].map((service, index) => (
+            {services.slice(0, 6).map((service, index) => (
               <div key={index} className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
                 <div className="relative mb-4">
                   <Image
@@ -170,9 +358,25 @@ export default function Home() {
                   <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
                     <service.icon className="w-6 h-6 text-blue-600" />
                   </div>
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                    <div className="flex items-center space-x-1 text-sm text-gray-700">
+                      <Clock className="h-4 w-4" />
+                      <span>{service.duration}</span>
+                    </div>
+                  </div>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
                 <p className="text-gray-600 mb-4">{service.description}</p>
+                
+                <div className="space-y-2 mb-4">
+                  {service.features.slice(0, 2).map((feature, featureIndex) => (
+                    <div key={featureIndex} className="flex items-center space-x-2">
+                      <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
+                      <span className="text-sm text-gray-600">{feature}</span>
+                    </div>
+                  ))}
+                </div>
+                
                 <a
                   href="https://wa.me/56946359143"
                   className="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center space-x-1"
@@ -183,53 +387,61 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          <div className="text-center mt-12">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8">Servicios Adicionales</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {additionalServices.map((service, index) => (
+                <div key={index} className="bg-white border border-gray-200 rounded-lg p-4 text-center hover:shadow-md transition-shadow">
+                  <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CheckCircle className="h-6 w-6 text-white" />
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-800 mb-2">
+                    {service}
+                  </h4>
+                  <a
+                    href="https://wa.me/56946359143"
+                    className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+                  >
+                    Consultar
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="sobre-mi" className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
+      {/* Testimonials Section */}
+      <section id="testimonios" className="py-20 bg-gradient-to-br from-purple-50 to-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <Image
-                src="/patricia-professional.jpg"
-                alt="Patricia Cartagena Chel - Psicóloga Clínica"
-                width={500}
-                height={600}
-                className="rounded-2xl shadow-2xl"
-              />
-            </div>
-            <div className="space-y-6">
-              <h2 className="text-3xl lg:text-5xl font-bold text-gray-900">
-                Patricia Cartagena Chel
-              </h2>
-              <p className="text-xl text-gray-600">
-                Psicóloga Clínica especializada en evaluación neuropsicológica y terapia individual.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-6 h-6 text-green-500" />
-                  <span className="text-gray-700">Licencia Profesional N° 873113</span>
+          <div className="text-center space-y-4 mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+              Lo que dicen nuestros pacientes
+            </h2>
+            <p className="text-xl text-gray-600">
+              Testimonios reales de personas que han encontrado bienestar
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-white/80 backdrop-blur-sm border-0 shadow-lg rounded-2xl p-6 space-y-4">
+                <div className="flex space-x-1">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                  ))}
                 </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-6 h-6 text-green-500" />
-                  <span className="text-gray-700">Especialista en Evaluaciones Neuropsicológicas</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-6 h-6 text-green-500" />
-                  <span className="text-gray-700">Certificada en Test ADOS-2 y ADI-R</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <CheckCircle className="w-6 h-6 text-green-500" />
-                  <span className="text-gray-700">Experiencia en Terapia Individual</span>
+                <p className="text-gray-700 italic">
+                  &ldquo;{testimonial.text}&rdquo;
+                </p>
+                <div className="pt-4 border-t border-gray-200">
+                  <p className="font-semibold text-gray-800">
+                    {testimonial.name}
+                  </p>
                 </div>
               </div>
-              <p className="text-gray-600 leading-relaxed">
-                Mi enfoque se centra en brindar un espacio seguro y profesional donde cada persona pueda 
-                explorar sus emociones, desarrollar herramientas de afrontamiento y lograr un bienestar 
-                psicológico duradero. Trabajo con niños, adolescentes y adultos en La Serena.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -331,6 +543,46 @@ export default function Home() {
                   <li>• Terapia individual</li>
                 </ul>
               </div>
+
+              <div className="mt-8 p-4 bg-white rounded-lg">
+                <h4 className="font-semibold text-gray-900 mb-2">Formas de Pago</h4>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Fonasa</li>
+                  <li>• Isapre</li>
+                  <li>• Particular</li>
+                  <li>• Transferencia bancaria</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              ¿Listo para comenzar tu proceso de bienestar?
+            </h2>
+            <p className="text-xl text-blue-100">
+              Agenda tu primera consulta y da el primer paso hacia una vida más plena
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://calendar.google.com/calendar/appointments/AcZssZ2FER6aZNcJ8QnqQOjz5K8XyQrz"
+                className="bg-white text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full text-lg font-semibold transition-colors flex items-center justify-center space-x-2"
+              >
+                <Calendar className="w-5 h-5" />
+                <span>Agendar Cita Online</span>
+              </a>
+              <a
+                href="tel:+56946359143"
+                className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-full text-lg font-semibold transition-colors flex items-center justify-center space-x-2"
+              >
+                <Phone className="w-5 h-5" />
+                <span>Llamar Ahora</span>
+              </a>
             </div>
           </div>
         </div>
@@ -396,3 +648,4 @@ export default function Home() {
     </div>
   );
 }
+
