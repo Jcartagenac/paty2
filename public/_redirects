@@ -1,0 +1,10 @@
+# SPA fallback
+/*    /index.html   200
+
+# Force HTTPS
+http://psicologialaserena.cl/*    https://psicologialaserena.cl/:splat    301!
+http://www.psicologialaserena.cl/*    https://psicologialaserena.cl/:splat    301!
+
+# Redirect www to non-www
+https://www.psicologialaserena.cl/*    https://psicologialaserena.cl/:splat    301!
+
