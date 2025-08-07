@@ -1,46 +1,51 @@
+# Robots.txt para Chrysalis - Psicología La Serena
+# Patricia Cartagena Chel - Psicóloga Clínica
+# Licencia N° 873113
+
 User-agent: *
 Allow: /
 
-# Sitemap location
+# Permitir acceso a todos los recursos importantes
+Allow: /servicios/
+Allow: /contacto
+Allow: /sobre-mi
+Allow: /*.jpg
+Allow: /*.png
+Allow: /*.webp
+Allow: /*.css
+Allow: /*.js
+
+# Bloquear archivos innecesarios
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /private/
+
+# Sitemap
 Sitemap: https://psicologialaserena.cl/sitemap.xml
 
-# Crawl-delay for respectful crawling
+# Crawl-delay para ser amigable con los servidores
 Crawl-delay: 1
 
-# Allow all major search engines
+# Directrices específicas para bots principales
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 1
 
-User-agent: Slurp
+User-agent: facebookexternalhit
 Allow: /
 
-User-agent: DuckDuckBot
+User-agent: Twitterbot
 Allow: /
 
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-# Disallow admin or private areas (if any)
-# User-agent: *
-# Disallow: /admin/
-# Disallow: /private/
-
-# Allow access to CSS and JS files for proper rendering
-User-agent: *
-Allow: /static/
-Allow: /assets/
-Allow: /*.css$
-Allow: /*.js$
-Allow: /*.png$
-Allow: /*.jpg$
-Allow: /*.jpeg$
-Allow: /*.gif$
-Allow: /*.svg$
-Allow: /*.webp$
+# Información de contacto para webmaster
+# Contacto: ps.patriciacartagenachel@gmail.com
+# Sitio web: https://psicologialaserena.cl
+# Teléfono: +56 9 4635 9143
+# Ubicación: La Serena, Región de Coquimbo, Chile
 

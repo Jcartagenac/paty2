@@ -129,8 +129,8 @@ export default function Home() {
   ];
 
   const stats = [
-    { number: '500+', label: 'Pacientes Atendidos' },
-    { number: '8+', label: 'Años de Experiencia' },
+    { number: '★★★★★', label: 'Clientes Satisfechos' },
+    { number: '✓', label: 'Experiencia Comprobada en el Área' },
     { number: '15+', label: 'Tipos de Evaluaciones' },
     { number: '98%', label: 'Satisfacción del Cliente' }
   ];
@@ -286,7 +286,7 @@ export default function Home() {
                   Psicóloga Clínica Especializada
                 </p>
                 <p className="text-gray-600 leading-relaxed">
-                  Con más de 8 años de experiencia en psicología clínica y evaluación neuropsicológica, 
+                  Con experiencia comprobada en psicología clínica y evaluación neuropsicológica, 
                   me especializo en brindar atención integral y personalizada. Mi enfoque se centra en 
                   crear un ambiente seguro y acogedor donde cada persona pueda explorar y desarrollar 
                   su potencial.
