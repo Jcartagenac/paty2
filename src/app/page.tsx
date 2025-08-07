@@ -235,8 +235,8 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  <strong>Patricia Cartagena Chel</strong>, psicóloga clínica especializada en <strong>evaluación neuropsicológica</strong> y <strong>test psicológicos</strong> en La Serena, Chile. 
-                  Realizamos <strong>test ADOS-2</strong>, <strong>WISC V</strong>, <strong>WAIS IV</strong>, <strong>ADI-R</strong> y terapia para <strong>ansiedad</strong>, <strong>depresión</strong> y <strong>autismo</strong>.
+                  Patricia Cartagena Chel, psicóloga clínica especializada en evaluación neuropsicológica y test psicológicos en La Serena, Chile. 
+                  Ofrecemos servicios de test ADOS-2, WISC V, WAIS IV, ADI-R y terapia especializada para ansiedad, depresión y trastornos del espectro autista.
                 </p>
               </div>
               
@@ -317,63 +317,113 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SEO Content Section - Hidden but crawlable */}
-      <section className="py-8 bg-gray-50">
+      {/* About Section */}
+      <section className="py-16 bg-gradient-to-r from-blue-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Psicología y Test Psicológicos en La Serena, Región de Coquimbo
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Centro de Psicología Especializada
             </h2>
-            <div className="max-w-4xl mx-auto text-gray-700 space-y-4">
+            <div className="max-w-4xl mx-auto text-lg text-gray-700 space-y-6">
               <p>
-                <strong>Psicología La Serena</strong> - Patricia Cartagena Chel es una psicóloga clínica especializada que ofrece servicios de 
-                <strong> psicología</strong> y <strong>test psicológicos</strong> en <strong>La Serena</strong>, Región de Coquimbo, Chile. 
-                Nuestro centro de <strong>psicología La Serena</strong> se especializa en <strong>evaluación neuropsicológica</strong>, 
-                <strong>test ADOS-2</strong>, <strong>test WISC V</strong>, <strong>test WAIS IV</strong> y <strong>test ADI-R</strong>.
+                Nuestro centro ofrece servicios integrales de psicología clínica en La Serena, 
+                especializándonos en evaluación neuropsicológica y test psicológicos para todas las edades. 
+                Con Patricia Cartagena Chel, psicóloga clínica con licencia profesional N° 873113, 
+                brindamos atención personalizada en la Región de Coquimbo.
               </p>
               <p>
-                Ofrecemos <strong>terapia psicológica</strong> para <strong>ansiedad</strong>, <strong>depresión</strong>, <strong>autismo</strong> y 
-                <strong>depresión post parto</strong> en <strong>La Serena</strong>. Como <strong>psicóloga clínica</strong> con licencia profesional N° 873113, 
-                brindo <strong>atención psicológica</strong> personalizada tanto presencial como por <strong>teleconsulta</strong>.
+                Nos especializamos en evaluaciones diagnósticas como test ADOS-2 para trastornos del espectro autista, 
+                WISC V y WAIS IV para evaluación de inteligencia, además de ofrecer terapia especializada 
+                para ansiedad, depresión y trastornos del estado de ánimo. También proporcionamos 
+                apoyo especializado para depresión post parto y terapia familiar.
               </p>
               <p>
-                Nuestros servicios de <strong>psicología La Serena</strong> incluyen <strong>diagnóstico de autismo</strong>, 
-                <strong>evaluación de inteligencia</strong>, <strong>neuropsicología</strong> y <strong>terapia individual</strong>. 
-                Si buscas un <strong>psicólogo en La Serena</strong> o <strong>test psicológicos La Serena</strong>, 
-                agenda tu <strong>consulta psicológica</strong> con Patricia Cartagena Chel.
+                Trabajamos tanto en modalidad presencial como por teleconsulta, adaptándonos a las necesidades 
+                de cada paciente. Nuestro enfoque se centra en brindar herramientas efectivas para el bienestar 
+                emocional y el desarrollo personal de nuestros pacientes.
               </p>
             </div>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6 text-sm text-gray-600">
-            <div className="bg-white p-4 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-2">Test Psicológicos La Serena</h3>
-              <ul className="space-y-1">
-                <li>• Test ADOS-2 La Serena</li>
-                <li>• Test WISC V La Serena</li>
-                <li>• Test WAIS IV La Serena</li>
-                <li>• Test ADI-R La Serena</li>
-                <li>• Evaluación Neuropsicológica</li>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <Brain className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">Evaluaciones Especializadas</h3>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Test ADOS-2 para diagnóstico de autismo</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>WISC V para evaluación infantil</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>WAIS IV para evaluación de adultos</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Evaluación neuropsicológica completa</span>
+                </li>
               </ul>
             </div>
-            <div className="bg-white p-4 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-2">Terapia Psicológica La Serena</h3>
-              <ul className="space-y-1">
-                <li>• Terapia Ansiedad La Serena</li>
-                <li>• Tratamiento Depresión La Serena</li>
-                <li>• Terapia Individual La Serena</li>
-                <li>• Psicoterapia La Serena</li>
-                <li>• Salud Mental La Serena</li>
+            
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                  <Heart className="w-6 h-6 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">Terapia Psicológica</h3>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Tratamiento para trastornos de ansiedad</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Terapia para episodios depresivos</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Apoyo en depresión post parto</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Terapia individual y familiar</span>
+                </li>
               </ul>
             </div>
-            <div className="bg-white p-4 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-2">Especialidades La Serena</h3>
-              <ul className="space-y-1">
-                <li>• Diagnóstico Autismo La Serena</li>
-                <li>• Psicología Infantil La Serena</li>
-                <li>• Neuropsicología La Serena</li>
-                <li>• Depresión Post Parto La Serena</li>
-                <li>• Evaluación Psicológica La Serena</li>
+            
+            <div className="bg-white/80 backdrop-blur-sm rounded-xl p-6 shadow-lg">
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
+                  <Users className="w-6 h-6 text-green-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900">Modalidades de Atención</h3>
+              </div>
+              <ul className="space-y-2 text-gray-700">
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Consulta presencial en La Serena</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Teleconsulta online</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Horarios flexibles</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Atención personalizada</span>
+                </li>
               </ul>
             </div>
           </div>

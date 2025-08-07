@@ -8,68 +8,22 @@ export const metadata: Metadata = {
   title: "Psicología La Serena | Test Psicológicos La Serena | Patricia Cartagena Chel",
   description: "Psicología La Serena Chile - Test psicológicos especializados: ADOS-2, WISC V, WAIS IV, evaluación neuropsicológica. Patricia Cartagena Chel, psicóloga clínica licencia 873113. Terapia ansiedad, depresión, autismo La Serena.",
   keywords: [
-    // Búsquedas principales
     "psicología la serena",
-    "psicólogo la serena",
-    "psicóloga la serena",
-    "test psicológicos la serena",
-    "test la serena",
-    "evaluación psicológica la serena",
-    
-    // Servicios específicos
-    "test ados-2 la serena",
-    "test wisc v la serena", 
-    "test wais iv la serena",
-    "test adir la serena",
-    "evaluación neuropsicológica la serena",
-    "neuropsicología la serena",
-    
-    // Tratamientos
-    "terapia ansiedad la serena",
-    "tratamiento depresión la serena",
-    "terapia individual la serena",
-    "psicoterapia la serena",
-    "salud mental la serena",
-    "bienestar emocional la serena",
-    
-    // Especialidades
-    "diagnóstico autismo la serena",
-    "tea la serena",
-    "espectro autista la serena",
-    "psicología infantil la serena",
-    "psicología adultos la serena",
-    "depresión post parto la serena",
-    
-    // Ubicación específica
-    "psicólogos región coquimbo",
-    "psicología región coquimbo",
-    "test psicológicos región coquimbo",
-    "salud mental región coquimbo",
-    
-    // Profesional
+    "test psicológicos",
+    "evaluación neuropsicológica",
+    "test ados-2",
+    "wisc v",
+    "wais iv",
+    "terapia ansiedad",
+    "tratamiento depresión",
     "patricia cartagena chel",
-    "patricia cartagena psicóloga",
-    "licencia 873113",
-    "chrysalis psicología",
-    
-    // Búsquedas relacionadas
-    "consulta psicológica la serena",
-    "atención psicológica la serena",
-    "centro psicológico la serena",
-    "clínica psicológica la serena",
-    "psicólogo clínico la serena",
-    "especialista psicología la serena",
-    
-    // Modalidades
-    "psicólogo presencial la serena",
-    "teleconsulta psicología la serena",
-    "terapia online la serena",
-    
-    // Urgencias y necesidades
-    "psicólogo urgente la serena",
-    "ayuda psicológica la serena",
-    "apoyo emocional la serena",
-    "crisis emocional la serena"
+    "psicóloga clínica",
+    "región coquimbo",
+    "salud mental",
+    "diagnóstico autismo",
+    "terapia individual",
+    "consulta psicológica",
+    "bienestar emocional"
   ].join(", "),
   authors: [{ name: "Patricia Cartagena Chel", url: "https://psicologialaserena.cl" }],
   creator: "Patricia Cartagena Chel - Psicóloga Clínica La Serena",
