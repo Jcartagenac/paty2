@@ -44,6 +44,7 @@ export default function Home() {
       icon: Brain,
       image: "/neuropsicologia.jpg",
       duration: '2-3 sesiones',
+      link: '/servicios/evaluacion-neuropsicologica',
       features: [
         'Evaluación de memoria y atención',
         'Análisis de funciones ejecutivas',
@@ -57,6 +58,7 @@ export default function Home() {
       icon: Users,
       image: "/ados-2-test.jpg",
       duration: '1-2 sesiones',
+      link: '/servicios/test-ados-2',
       features: [
         'Evaluación especializada para TEA',
         'Protocolo internacional reconocido',
@@ -70,6 +72,7 @@ export default function Home() {
       icon: MessageCircle,
       image: "/professional-support.webp",
       duration: '1 sesión',
+      link: '/servicios/test-adir',
       features: [
         'Entrevista estructurada con padres',
         'Evaluación del desarrollo temprano',
@@ -83,6 +86,7 @@ export default function Home() {
       icon: Star,
       image: "/wisc-test.png",
       duration: '2 sesiones',
+      link: '/servicios/wisc-v',
       features: [
         'Evaluación de CI y capacidades cognitivas',
         'Análisis de fortalezas y debilidades',
@@ -96,6 +100,7 @@ export default function Home() {
       icon: Target,
       image: "/professional-support.webp",
       duration: '2 sesiones',
+      link: '/servicios/wais-iv',
       features: [
         'Evaluación de inteligencia en adultos',
         'Análisis de capacidades cognitivas',
@@ -109,6 +114,7 @@ export default function Home() {
       icon: Heart,
       image: "/terapia-ansiedad.png",
       duration: 'Variable',
+      link: '/servicios/tratamientos-depresivos',
       features: [
         'Terapia cognitivo-conductual',
         'Técnicas de activación conductual',
@@ -122,6 +128,7 @@ export default function Home() {
       icon: Users,
       image: "/terapia-ansiedad.png",
       duration: 'Variable',
+      link: '/servicios/trastornos-ansiosos',
       features: [
         'Técnicas de relajación y respiración',
         'Terapia de exposición gradual',
@@ -135,6 +142,7 @@ export default function Home() {
       icon: Heart,
       image: "/consultorio-ambiente.webp",
       duration: 'Variable',
+      link: '/servicios/depresion-post-parto',
       features: [
         'Apoyo emocional especializado',
         'Técnicas de vinculación madre-bebé',
@@ -525,13 +533,15 @@ export default function Home() {
             {services.slice(0, 6).map((service, index) => (
               <div key={index} className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-6 hover:shadow-lg transition-shadow">
                 <div className="relative mb-4">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    width={300}
-                    height={200}
-                    className="rounded-lg w-full h-48 object-cover"
-                  />
+                  <Link href={service.link} className="block">
+                    <Image
+                      src={service.image}
+                      alt={service.title}
+                      width={300}
+                      height={200}
+                      className="rounded-lg w-full h-48 object-cover hover:scale-105 transition-transform cursor-pointer"
+                    />
+                  </Link>
                   <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-2">
                     <service.icon className="w-6 h-6 text-blue-600" />
                   </div>
@@ -542,7 +552,9 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+                <Link href={service.link}>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 hover:text-blue-600 transition-colors cursor-pointer">{service.title}</h3>
+                </Link>
                 <p className="text-gray-600 mb-4">{service.description}</p>
                 
                 <div className="space-y-2 mb-4">
@@ -554,13 +566,13 @@ export default function Home() {
                   ))}
                 </div>
                 
-                <a
-                  href="https://wa.me/56946359143"
+                <Link
+                  href={service.link}
                   className="text-blue-600 hover:text-blue-700 font-medium inline-flex items-center space-x-1"
                 >
-                  <span>Consultar</span>
+                  <span>Ver Detalles</span>
                   <MessageCircle className="w-4 h-4" />
-                </a>
+                </Link>
               </div>
             ))}
           </div>
