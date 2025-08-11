@@ -170,14 +170,14 @@ export default function Home() {
   ];
 
   const additionalServices = [
-    'Terapia Individual para Adultos',
-    'Terapia de Pareja',
-    'Terapia Familiar',
-    'Orientación Vocacional',
-    'Evaluación de Discapacidad Intelectual',
-    'Informes Psicológicos Legales',
-    'Consultoría Educacional',
-    'Talleres de Bienestar Mental'
+    { name: 'Test ADI-R', link: '/servicios/test-adir' },
+    { name: 'Test WISC V', link: '/servicios/wisc-v' },
+    { name: 'Test WAIS IV', link: '/servicios/wais-iv' },
+    { name: 'Tratamientos Depresivos', link: '/servicios/tratamientos-depresivos' },
+    { name: 'Trastornos de Ansiedad', link: '/servicios/trastornos-ansiosos' },
+    { name: 'Depresión Post-Parto', link: '/servicios/depresion-post-parto' },
+    { name: 'Evaluación Neuropsicológica', link: '/servicios/evaluacion-neuropsicologica' },
+    { name: 'Consultoría Educacional', link: 'https://wa.me/56946359143' }
   ];
 
   return (
@@ -574,14 +574,23 @@ export default function Home() {
                     <CheckCircle className="h-6 w-6 text-white" />
                   </div>
                   <h4 className="text-lg font-semibold text-gray-800 mb-2">
-                    {service}
+                    {service.name}
                   </h4>
-                  <a
-                    href="https://wa.me/56946359143"
-                    className="text-blue-600 hover:text-blue-700 text-sm font-medium"
-                  >
-                    Consultar
-                  </a>
+                  {service.link.startsWith('/') ? (
+                    <Link
+                      href={service.link}
+                      className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+                    >
+                      Consultar
+                    </Link>
+                  ) : (
+                    <a
+                      href={service.link}
+                      className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+                    >
+                      Consultar
+                    </a>
+                  )}
                 </div>
               ))}
             </div>
