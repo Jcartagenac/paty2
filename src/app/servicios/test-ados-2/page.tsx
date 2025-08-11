@@ -1,6 +1,6 @@
-import Image from "next/image";
+
 import Link from "next/link";
-import { ArrowLeft, Users, Clock, FileText, CheckCircle } from "lucide-react";
+import { ArrowLeft, Users, Clock, CheckCircle } from "lucide-react";
 
 export default function TestAdos2() {
   return (
@@ -32,7 +32,7 @@ export default function TestAdos2() {
           <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">¿Qué es el ADOS-2?</h2>
             <p className="text-gray-700 mb-6 leading-relaxed">
-              El ADOS-2 es una evaluación estandarizada y semi-estructurada de la comunicación, interacción social, juego e imaginación, y comportamientos restringidos y repetitivos en personas con sospecha de TEA. Es considerado el "gold standard" mundial para el diagnóstico de autismo y es utilizado por profesionales especializados en todo el mundo.
+              El ADOS-2 es una evaluación estandarizada y semi-estructurada de la comunicación, interacción social, juego e imaginación, y comportamientos restringidos y repetitivos en personas con sospecha de TEA. Es considerado el estándar de oro mundial para el diagnóstico de autismo y es utilizado por profesionales especializados en todo el mundo.
             </p>
 
             <h3 className="text-xl font-semibold text-gray-900 mb-4">Características del ADOS-2</h3>

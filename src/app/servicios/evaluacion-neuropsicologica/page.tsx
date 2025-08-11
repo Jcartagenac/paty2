@@ -1,6 +1,6 @@
-import Image from "next/image";
+
 import Link from "next/link";
-import { ArrowLeft, Brain, Clock, FileText, CheckCircle } from "lucide-react";
+import { ArrowLeft, Brain, Clock, CheckCircle } from "lucide-react";
 
 export default function EvaluacionNeuropsicologica() {
   return (

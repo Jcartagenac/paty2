@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Link from "next/link";
 import { ArrowLeft, Phone, Mail, MapPin, Calendar, MessageCircle, Clock } from "lucide-react";
 
