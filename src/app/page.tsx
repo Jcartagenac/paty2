@@ -195,13 +195,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center">
-                <Heart className="w-6 h-6 text-white" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-gray-900">Chrysalis</h1>
-                <p className="text-sm text-gray-600">Chrysalis</p>
-              </div>
+              <Image
+                src="/chrysalis-logo-oficial.png"
+                alt="Chrysalis - Psicóloga Patricia Cartagena Tapia La Serena"
+                width={150}
+                height={75}
+                className="h-16 w-auto"
+                priority
+              />
             </div>
             <nav className="hidden md:flex space-x-8">
               <Link href="#inicio" className="text-gray-700 hover:text-blue-600 transition-colors">Inicio</Link>
@@ -236,8 +237,17 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
+                <div className="flex items-center justify-center lg:justify-start mb-6">
+                  <Image
+                    src="/chrysalis-logo-oficial.png"
+                    alt="Chrysalis - Atención Psicológica"
+                    width={300}
+                    height={150}
+                    className="h-24 w-auto"
+                    priority
+                  />
+                </div>
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  <span className="block">Chrysalis</span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                     Psicóloga Patricia Cartagena Tapia - La Serena
                   </span>
@@ -807,6 +817,15 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <Image
+              src="/chrysalis-logo-oficial.png"
+              alt="Chrysalis - Atención Psicológica"
+              width={200}
+              height={100}
+              className="h-16 w-auto mx-auto mb-4 filter brightness-0 invert"
+            />
+          </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
