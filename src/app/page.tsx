@@ -237,14 +237,14 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  <span className="block">Psicólogo La Serena | Psicóloga Coquimbo</span>
+                  <span className="block">Chrysalis</span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                    Patricia Cartagena Chel - IV Región
+                    Psicóloga Patricia Cartagena Tapia - La Serena
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
                   <strong>Psicólogo La Serena</strong> y <strong>Psicóloga Coquimbo</strong> especializada en evaluación neuropsicológica y test psicológicos. 
-                  Patricia Cartagena Chel, <strong>psicóloga IV región</strong> con licencia 873113. 
+                  Patricia Cartagena Tapia, <strong>psicóloga IV región</strong> con licencia 873113. 
                   Trabajo desde el modelo cognitivo conductual y terapia DBT, ofreciendo servicios de test ADOS-2, WISC V, WAIS IV, ADI-R y terapia especializada para ansiedad, depresión y trastornos del espectro autista en <strong>La Serena, Coquimbo y Cuarta Región</strong>.
                 </p>
               </div>
@@ -337,7 +337,7 @@ export default function Home() {
               <p>
                 Nuestro centro ofrece servicios integrales de <strong>psicólogo La Serena</strong> y <strong>psicóloga Coquimbo</strong>, 
                 especializándonos en evaluación neuropsicológica y test psicológicos para todas las edades en la <strong>Cuarta Región</strong>. 
-                Con Ps. Patricia Cartagena Chel, <strong>psicóloga clínica IV región</strong> con licencia profesional N° 873113, 
+                Con Ps. Patricia Cartagena Tapia, <strong>psicóloga clínica IV región</strong> con licencia profesional N° 873113, 
                 brindamos atención personalizada en Amunátegui 785, oficina 204, La Serena.
               </p>
               <p>
@@ -523,7 +523,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Test Psicológicos Especializados
+              Psicólogo Coquimbo - Test Psicológicos IV Región
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Como <strong>psicóloga La Serena</strong> y <strong>psicólogo Coquimbo</strong>, ofrezco evaluaciones neuropsicológicas profesionales para niños, adolescentes y adultos en toda la <strong>IV región</strong> y <strong>Cuarta Región</strong>.

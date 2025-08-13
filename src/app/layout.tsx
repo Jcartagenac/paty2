@@ -6,11 +6,13 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Psicólogo La Serena | Psicóloga Coquimbo | Patricia Cartagena Chel IV Región",
-  description: "Psicólogo La Serena y Psicóloga Coquimbo - Test psicológicos especializados: ADOS-2, WISC V, WAIS IV, evaluación neuropsicológica. Patricia Cartagena Chel, psicólogo Cuarta Región licencia 873113. Terapia ansiedad, depresión, autismo IV región.",
+  title: "Chrysalis - Psicóloga Patricia Cartagena Tapia La Serena | Psicólogo Coquimbo IV Región",
+  description: "Chrysalis - Psicóloga Patricia Cartagena Tapia La Serena. Psicólogo Coquimbo y IV región. Test psicológicos especializados: ADOS-2, WISC V, WAIS IV, evaluación neuropsicológica. Licencia 873113. Terapia ansiedad, depresión, autismo Cuarta Región.",
   keywords: [
+    "chrysalis",
+    "patricia cartagena tapia",
+    "psicóloga la serena",
     "psicólogo la serena",
-    "psicóloga la serena", 
     "psicólogo coquimbo",
     "psicóloga coquimbo",
     "psicólogo cuarta región",
@@ -22,7 +24,6 @@ export const metadata: Metadata = {
     "wais iv",
     "terapia ansiedad",
     "tratamiento depresión",
-    "patricia cartagena chel",
     "psicóloga clínica",
     "región coquimbo",
     "salud mental",
@@ -31,8 +32,8 @@ export const metadata: Metadata = {
     "consulta psicológica",
     "bienestar emocional"
   ].join(", "),
-  authors: [{ name: "Patricia Cartagena Chel", url: "https://psicologialaserena.cl" }],
-  creator: "Patricia Cartagena Chel - Psicóloga Clínica La Serena",
+  authors: [{ name: "Patricia Cartagena Tapia", url: "https://psicologialaserena.cl" }],
+  creator: "Patricia Cartagena Tapia - Psicóloga Clínica La Serena",
   publisher: "Chrysalis - Psicología La Serena",
   robots: {
     index: true,
