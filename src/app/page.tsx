@@ -237,14 +237,15 @@ export default function Home() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  <span className="block">Chrysalis</span>
+                  <span className="block">Psicólogo La Serena | Psicóloga Coquimbo</span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                    Atención psicológica especializada
+                    Patricia Cartagena Chel - IV Región
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Ps. Patricia Cartagena Chel, psicóloga clínica especializada en evaluación neuropsicológica y test psicológicos en La Serena, Chile. 
-                  Trabajo desde el modelo cognitivo conductual y terapia DBT (Terapia Dialéctica Conductual), ofreciendo servicios de test ADOS-2, WISC V, WAIS IV, ADI-R y terapia especializada para ansiedad, depresión y trastornos del espectro autista.
+                  <strong>Psicólogo La Serena</strong> y <strong>Psicóloga Coquimbo</strong> especializada en evaluación neuropsicológica y test psicológicos. 
+                  Patricia Cartagena Chel, <strong>psicóloga IV región</strong> con licencia 873113. 
+                  Trabajo desde el modelo cognitivo conductual y terapia DBT, ofreciendo servicios de test ADOS-2, WISC V, WAIS IV, ADI-R y terapia especializada para ansiedad, depresión y trastornos del espectro autista en <strong>La Serena, Coquimbo y Cuarta Región</strong>.
                 </p>
               </div>
               
@@ -330,24 +331,24 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              Centro de Psicología Especializada
+              Evaluación Neuropsicológica Coquimbo
             </h2>
             <div className="max-w-4xl mx-auto text-lg text-gray-700 space-y-6">
               <p>
-                Nuestro centro ofrece servicios integrales de psicología clínica en La Serena, 
-                especializándonos en evaluación neuropsicológica y test psicológicos para todas las edades. 
-                Con Ps. Patricia Cartagena Chel, psicóloga clínica con licencia profesional N° 873113, 
+                Nuestro centro ofrece servicios integrales de <strong>psicólogo La Serena</strong> y <strong>psicóloga Coquimbo</strong>, 
+                especializándonos en evaluación neuropsicológica y test psicológicos para todas las edades en la <strong>Cuarta Región</strong>. 
+                Con Ps. Patricia Cartagena Chel, <strong>psicóloga clínica IV región</strong> con licencia profesional N° 873113, 
                 brindamos atención personalizada en Amunátegui 785, oficina 204, La Serena.
               </p>
               <p>
-                Nos especializamos en evaluaciones diagnósticas como test ADOS-2 para trastornos del espectro autista, 
+                Como <strong>psicólogo Cuarta Región</strong>, nos especializamos en evaluaciones diagnósticas como test ADOS-2 para trastornos del espectro autista, 
                 WISC V y WAIS IV para evaluación de inteligencia. En el ámbito terapéutico, trabajamos desde el modelo 
                 cognitivo conductual y la terapia DBT (Terapia Dialéctica Conductual), ofreciendo tratamiento especializado 
                 para ansiedad, depresión, trastornos del estado de ánimo, depresión post parto y terapia familiar.
               </p>
               <p>
                 Trabajamos tanto en modalidad presencial como por teleconsulta, adaptándonos a las necesidades 
-                de cada paciente. Nuestro enfoque desde el modelo cognitivo conductual y la terapia DBT se centra en 
+                de cada paciente en <strong>La Serena, Coquimbo y toda la IV región</strong>. Nuestro enfoque desde el modelo cognitivo conductual y la terapia DBT se centra en 
                 brindar herramientas efectivas para el manejo emocional, regulación conductual y el desarrollo personal, 
                 promoviendo cambios duraderos en el bienestar emocional de nuestros pacientes.
               </p>
@@ -360,7 +361,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
                   <Brain className="w-6 h-6 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">Evaluaciones Especializadas</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Test ADOS-2 y WISC V</h3>
               </div>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center space-x-2">
@@ -387,7 +388,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
                   <Heart className="w-6 h-6 text-purple-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">Terapia Psicológica</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Terapia DBT y Cognitivo Conductual</h3>
               </div>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center space-x-2">
@@ -414,7 +415,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center">
                   <Users className="w-6 h-6 text-green-600" />
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900">Modalidades de Atención</h3>
+                <h3 className="text-xl font-semibold text-gray-900">Atención Presencial y Online</h3>
               </div>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center space-x-2">
@@ -522,10 +523,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Servicios Especializados
+              Test Psicológicos Especializados
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ofrezco una amplia gama de servicios psicológicos especializados para niños, adolescentes y adultos en La Serena.
+              Como <strong>psicóloga La Serena</strong> y <strong>psicólogo Coquimbo</strong>, ofrezco evaluaciones neuropsicológicas profesionales para niños, adolescentes y adultos en toda la <strong>IV región</strong> y <strong>Cuarta Región</strong>.
             </p>
           </div>
 
@@ -649,10 +650,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4">
-              Agenda tu Consulta
+              Contacto Psicólogo Cuarta Región
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Estoy aquí para acompañarte en tu proceso de bienestar. Contáctame para agendar una cita.
+              Estoy aquí para acompañarte en tu proceso de bienestar. Contáctame como <strong>psicóloga Coquimbo</strong> especialista en <strong>psicólogo IV región</strong> para agendar una cita.
             </p>
           </div>
 

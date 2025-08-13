@@ -6,10 +6,15 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Psicología La Serena | Test Psicológicos La Serena | Patricia Cartagena Chel",
-  description: "Psicología La Serena Chile - Test psicológicos especializados: ADOS-2, WISC V, WAIS IV, evaluación neuropsicológica. Patricia Cartagena Chel, psicóloga clínica licencia 873113. Terapia ansiedad, depresión, autismo La Serena.",
+  title: "Psicólogo La Serena | Psicóloga Coquimbo | Patricia Cartagena Chel IV Región",
+  description: "Psicólogo La Serena y Psicóloga Coquimbo - Test psicológicos especializados: ADOS-2, WISC V, WAIS IV, evaluación neuropsicológica. Patricia Cartagena Chel, psicólogo Cuarta Región licencia 873113. Terapia ansiedad, depresión, autismo IV región.",
   keywords: [
-    "psicología la serena",
+    "psicólogo la serena",
+    "psicóloga la serena", 
+    "psicólogo coquimbo",
+    "psicóloga coquimbo",
+    "psicólogo cuarta región",
+    "psicólogo iv región",
     "test psicológicos",
     "evaluación neuropsicológica",
     "test ados-2",
