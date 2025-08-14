@@ -198,9 +198,9 @@ export default function Home() {
               <Image
                 src="/chrysalis-logo-oficial.png"
                 alt="Chrysalis - Psicóloga Patricia Cartagena Tapia La Serena"
-                width={450}
-                height={225}
-                className="h-36 w-auto"
+                width={300}
+                height={150}
+                className="h-24 w-auto"
                 priority
               />
             </div>
@@ -237,17 +237,8 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <div className="flex items-center justify-center lg:justify-start mb-8">
-                  <Image
-                    src="/chrysalis-logo-oficial.png"
-                    alt="Chrysalis - Atención Psicológica"
-                    width={800}
-                    height={400}
-                    className="h-20 lg:h-24 w-auto"
-                    priority
-                  />
-                </div>
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  <span className="block">Chrysalis</span>
                   <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                     Psicóloga Patricia Cartagena Tapia - La Serena
                   </span>
