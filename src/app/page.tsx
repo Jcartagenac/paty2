@@ -193,14 +193,14 @@ export default function Home() {
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
+          <div className="flex justify-between items-center py-2">
             <div className="flex items-center space-x-3">
               <Image
                 src="/chrysalis-logo-oficial.png"
                 alt="Chrysalis - Psicóloga Patricia Cartagena Tapia La Serena"
-                width={300}
-                height={150}
-                className="h-24 w-auto"
+                width={200}
+                height={100}
+                className="h-16 w-auto"
                 priority
               />
             </div>
